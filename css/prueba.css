@@ -204,6 +204,8 @@ figure, body {
  .datos__titulo{
    text-align: center;
  }
- .descripcion,.selectores{
-   font-size: 14px;
+ 
+ .indicacion__form{
+   width: 100%;
+   height: auto;
  }
