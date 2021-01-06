@@ -228,7 +228,7 @@ figure, body {
 
 @media screen and (min-width: 768px){
   .formulario{
-    padding: 0 8rem;
+    padding: 0 2rem;
   }
 
 .datos{
@@ -236,11 +236,11 @@ figure, body {
   flex-wrap: wrap;
 }
 .datos__form{
-  width: 45%;
+  width: 48%;
   margin-right:.3rem ;
 }
 .descripcion,.selectores{
-  width: 45%;
+  width: 48%;
 }
 
 .text_area{
@@ -253,14 +253,12 @@ figure, body {
 }
 
 
-.selectores{
-  padding-left: .3rem;
-}
+
 .departamento,.distrito,.provincia{
   margin:0 .3rem;
 }
 .datos__titulo{
-  width: 90%;
+  width: 100%;
   padding: 0 8rem;
   font-size: 2rem;
 }
@@ -294,6 +292,8 @@ figure, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .imagen__submit{
     margin-bottom: 2rem;
@@ -302,3 +302,8 @@ figure, body {
     border-radius: 20px;
   }
 }
+
+@media screen and (min-width: 930px){
+  .formulario{
+    padding: 0 8rem;
+  }}

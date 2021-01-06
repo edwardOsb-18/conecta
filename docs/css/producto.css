@@ -1,0 +1,90 @@
+.producto__tabla{
+    font-size: 14px;
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tabla,.tabla__celda{
+    border:1px solid gray;
+
+}
+
+.tabla__celda{
+    text-align: center;
+    padding: .2rem;
+}
+
+
+@media screen and (min-width: 768px){
+    .tabla__celda{
+     
+        padding: .8rem;
+    }
+
+}
+
+
+.producto__titulo{
+    text-align: center;
+}
+
+.producto__boton{
+    padding: .3rem;
+    color: white;
+    background-color: rgb(5, 168, 147);
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .producto__boton{
+        padding: .5rem;
+    }
+
+}
+
+
+.producto{
+    padding: .8rem;
+}
+
+
+@media screen and (min-width: 768px){
+    .producto{
+        padding: 0 8rem;
+    }
+
+}
+
+.header__main{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.items{
+    display: flex;
+
+}
+
+.items__1{
+    padding: .3rem;
+    border: 1px solid gray;
+}
+
+.form__input{
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.tabla__head{
+    background-color: #212529;
+    color: white;
+}
