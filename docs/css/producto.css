@@ -1,37 +1,53 @@
-.producto__tabla{
-    font-size: 14px;
-    overflow-x: auto;
-    margin-top: 1rem;
-}
-.tabla{
-    width: 100%;
-    border-collapse: collapse;
-}
-.tabla,.tabla__celda{
-    border:1px solid gray;
-
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.tabla__celda{
-    text-align: center;
-    padding: .2rem;
+.producto {
+    padding: .8rem;
 }
 
-
-@media screen and (min-width: 768px){
-    .tabla__celda{
-     
-        padding: .8rem;
+@media screen and (min-width: 768px) {
+    .producto {
+        padding: 0 8rem;
     }
 
 }
 
-
-.producto__titulo{
+.producto__titulo {
     text-align: center;
+    font-size: 1.5rem;
 }
 
-.producto__boton{
+@media screen and (min-width: 768px) {
+    .producto__titulo {
+
+        font-size: 2rem;
+    }
+
+}
+
+.header__main {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+    .header__main {
+        font-size: 1rem;
+    }
+
+}
+
+.form__input {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.producto__boton {
     padding: .3rem;
     color: white;
     background-color: rgb(5, 168, 147);
@@ -39,52 +55,181 @@
     border-radius: 10px;
 }
 
-
-
-@media screen and (min-width: 768px){
-    .producto__boton{
+@media screen and (min-width: 768px) {
+    .producto__boton {
         padding: .5rem;
     }
 
 }
 
 
-.producto{
-    padding: .8rem;
+.nuevo__producto {
+    display: none;
 }
 
+.contenido {
+    background-color: white;
+padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
 
-@media screen and (min-width: 768px){
-    .producto{
-        padding: 0 8rem;
+@media screen and (min-width: 768px) {
+    .contenido{
+        padding:0;
     }
 
 }
 
-.header__main{
+.nuevoProducto {
+    text-align: center;
+}
+
+.nuevoProducto__form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem 0;
+    padding-top: 0;
+
+}
+
+@media screen and (min-width: 768px) {
+    .nuevoProducto__form {
+        padding: 1rem 8rem;
+        padding-top: 0;
+    }
+
+}
+
+.form__item {
+    width: 100%;
+
+    margin: .5rem 0;
+    border-radius: 8px;
+}
+
+.form__text {
+    width: 100%;
+    border-radius: 8px;
+
+
+}
+
+.nuevo__producto {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, .5);
+    top: 0;
+    left: 0;
+    padding: 7.5rem .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .nuevo__producto {
+        padding: 2rem 10rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .nuevo__producto {
+        padding: 2rem 25rem;
+    }
+}
+
+.botonesProducto {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__submit {
+    margin: 0rem .3rem;
+
+}
+
+.cancelar {
+    background-color: rgb(218, 40, 40);
+    color: white;
+    padding: .2rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.guardar {
+    background-color: rgb(13, 156, 144);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.producto__tabla {
     font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    overflow-x: auto;
+    margin-top: 1rem;
 }
 
-
-.items{
-    display: flex;
+@media screen and (min-width: 768px) {
+    .producto__tabla {
+        font-size: 1rem;
+    }
 
 }
 
-.items__1{
-    padding: .3rem;
-    border: 1px solid gray;
-}
-
-.form__input{
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
     background-color: #f5f5f5;
-    border-radius: 5px;
 }
 
-.tabla__head{
+.tabla__head {
     background-color: #212529;
     color: white;
+}
+
+.tabla,
+.tabla__celda {
+    border: 1px solid gray;
+
+}
+
+.tabla__celda {
+    text-align: center;
+    padding: .2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .tabla__celda {
+
+        padding: .8rem;
+    }
+
+}
+
+.editar,
+.eliminar {
+    cursor: pointer;
+}
+
+.items {
+    display: flex;
+}
+
+.items__1 {
+    padding: .3rem;
+    border: 1px solid gray;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    .items__1 {
+        font-size: 1rem;
+    }
+}
+
+.display__nuevo {
+    display: block;
 }
