@@ -233,3 +233,12 @@ padding: 1rem;
 .display__nuevo {
     display: block;
 }
+
+.text_label{
+    font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+    .text_label{
+        font-size: 1rem;
+    }
+}
