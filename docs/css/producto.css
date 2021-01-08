@@ -156,7 +156,17 @@ padding: 1rem;
     padding: .2rem;
     border-radius: 10px;
     text-decoration: none;
+    font-size: 14px;
 }
+
+
+@media screen and (min-width: 768px) {
+    .cancelar {
+        font-size: 1rem;
+    }
+
+}
+
 
 .guardar {
     background-color: rgb(13, 156, 144);
@@ -214,6 +224,13 @@ padding: 1rem;
     cursor: pointer;
 }
 
+.editar{
+    color: rgb(177, 177, 49)
+}
+.eliminar{
+    color: red;
+}
+
 .items {
     display: flex;
 }
@@ -222,6 +239,9 @@ padding: 1rem;
     padding: .3rem;
     border: 1px solid gray;
     font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin-top: .5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -242,3 +262,4 @@ padding: 1rem;
         font-size: 1rem;
     }
 }
+

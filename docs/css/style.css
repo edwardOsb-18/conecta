@@ -103,10 +103,34 @@ body {
 
 .menuHo__usuario {
   display: flex;
+  align-items: center;
+}
+.ver__tienda1{
+  text-decoration: none;
+  color:black;
+  font-size: 14px;
+  text-align: center;
+}
+
+.menuHo__usuarioSection{
+
+  display: flex;
+  width: 77%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .menuHo__usuarioSection{
+
+    
+    width: 81%;
+  }
 }
 
 .menuHo__nombre {
   align-self: center;
+  
 }
 
 .icono {
@@ -148,11 +172,12 @@ body {
     width: 100%;
     height: calc(100% - 90px);
     z-index: 5000;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color:  #f5f5f5;;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .6s;
+    
   }
 
   .menu {
@@ -161,6 +186,7 @@ body {
 
   .menu__item {
     width: 120px;
+    
   }
 
   .nav.is-active {
@@ -264,6 +290,7 @@ body {
   .datos {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 103%;
   }
 
   .datos__form {
